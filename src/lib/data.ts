@@ -6,7 +6,7 @@ export const LOCATIONS = [
   { id: 'corredor', name: 'Corredor Bloco 1', type: 'Externo', aqi: 45, status: 'Bom' },
 ];
 
-// NOME NOVO: DATABASE (Para garantir que não haja confusão)
+
 export const DATABASE = [
   // --- GALPÃO ---
   { time: '08:00', co: 1.2, co2: 400, ch4: 5, temp: 24, hum: 60, local: 'galpao' },

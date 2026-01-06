@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
-// IMPORTANDO O NOME NOVO CORRETAMENTE:
+
 import { DATABASE, LOCATIONS } from '@/lib/data'; 
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area, BarChart, Bar, Legend
@@ -26,14 +26,14 @@ export function Dashboard() {
     document.documentElement.classList.toggle('dark');
   };
 
-  // 1. FILTRAGEM SEGURA (Usa DATABASE)
+  
   const filteredData = useMemo(() => {
-    // Se DATABASE não existir, usa array vazio para não quebrar a tela
+
     const sourceData = DATABASE || [];
     return sourceData.filter(item => item.local === selectedLocId);
   }, [selectedLocId]);
 
-  // 2. CÁLCULO DOS ÚLTIMOS DADOS (KPIs)
+  
   const currentStats = useMemo(() => {
     if (filteredData.length === 0) return { temp: 0, hum: 0, co2: 0 };
     return filteredData[filteredData.length - 1]; 
@@ -53,7 +53,7 @@ export function Dashboard() {
               <Wind size={22} />
             </div>
             <div>
-              <h1 className="font-bold text-xl text-slate-900 dark:text-white leading-none">AirMon Campus</h1>
+              <h1 className="font-bold text-xl text-slate-900 dark:text-white leading-none">DashBoard - Monitoramento</h1>
               <span className="text-xs text-slate-500 font-medium">LoRaWAN & FIWARE</span>
             </div>
           </div>
@@ -108,7 +108,7 @@ export function Dashboard() {
           </div>
         </div>
 
-        {/* CARDS KPI - AGORA DEVEM MOSTRAR NÚMEROS REAIS */}
+        {/* CARDS KPI*/}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <Card className="border-l-4 border-l-blue-500 shadow-sm">
             <CardContent className="p-5 flex items-center justify-between">

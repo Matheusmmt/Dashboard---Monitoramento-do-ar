@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 // Tipos para o TypeScript não reclamar
 type UserRole = 'admin' | 'visitor';
