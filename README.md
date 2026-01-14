@@ -6,12 +6,15 @@
 
 Este projeto é uma aplicação web moderna desenvolvida como interface para um sistema de monitoramento do ar baseado em um artigo para a disciplina de Tecnlogias Web. O dashboard fornece visualizações intuitivas e atualizadas de dados de qualidade do ar coletados por diversos sensores IoT distribuídos geograficamente. No momento atual do projeto estão sendo utilizados dados ficticios.
 
-## Link do Artigo: https://sol.sbc.org.br/index.php/wcama/article/view/29429
+### Link do Artigo: https://sol.sbc.org.br/index.php/wcama/article/view/29429
 
 ### Equipe de desenvolvimento do dashboard
   MATHEUS MELO TEIXEIRA
+  
   RAFAEL DE SOUSA FIDELES
+  
   BRENO WESLEY TEIXEIRA MARQUES
+  
   GILLIARD RIPARDO FURTADO
 
 ### 🎯 Objetivos do Projeto
